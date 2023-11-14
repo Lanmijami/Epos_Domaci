@@ -1,0 +1,14 @@
+.header{
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    display: flex;
+}
+.prvi{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(246, 229, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
