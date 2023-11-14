@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   height: 200vh;
 }
 
@@ -30,6 +30,11 @@ body {
   justify-content: space-around;
 }
 
+.menu-left a,
+.menu-right a {
+  color: black;
+}
+
 .menu a {
   text-decoration: none;
 }
@@ -38,6 +43,8 @@ body {
   height: 30%;
   display: flex;
 
+  padding: 0 640px;
+  padding-top: 10rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -51,4 +58,55 @@ body {
   font-size: 1.5rem;
   color: rgb(105, 104, 104);
   font-weight: 100;
+}
+
+.googly {
+  height: 3rem;
+}
+
+.left-box {
+  background-color: #0a6afa;
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid #0253cc;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.right-box {
+  background-color: #0a6afa;
+  height: 622px;
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid #0253cc;
+
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+
+  text-wrap: wrap;
+}
+
+.box-holder {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.left-box:hover,
+.right-box:hover {
+  background-color: #0253cc;
+  cursor: pointer;
+  transition: 0.3s;
 }
