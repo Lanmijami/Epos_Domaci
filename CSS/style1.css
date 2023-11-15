@@ -1,0 +1,35 @@
+.header{
+    height: 30px;
+    width: auto;
+    background-color: white;
+    display: flex;
+}
+.prvi{
+    height:1000px;
+    width: fit-content;
+    background-color: rgb(231, 228, 228);
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.naslov{
+    text-decoration-line:underline ;
+    text-decoration-color: #3E78B2;
+}
+.tekst{
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    line-height: 25px;
+    /* word-spacing: 5px; */
+}
+
+.naslov{
+    justify-content: center;
+}
+
+.okice{
+    
+}
