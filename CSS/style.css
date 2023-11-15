@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 2rem;
-  height: 200vh;
+  font-size: 1.5rem;
+  height: 150vh;
 }
 
 .menu {
@@ -21,6 +21,7 @@ body {
   align-items: center;
   position: fixed;
   border-bottom: 1.5px solid rgb(227, 227, 227);
+  z-index: 10;
 }
 
 .menu-left,
@@ -28,6 +29,11 @@ body {
   width: 35%;
   display: flex;
   justify-content: space-around;
+}
+
+.menu-left a,
+.menu-right a {
+  color: black;
 }
 
 .menu a {
@@ -38,6 +44,8 @@ body {
   height: 30%;
   display: flex;
 
+  padding: 0 640px;
+  padding-top: 10rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -51,4 +59,107 @@ body {
   font-size: 1.5rem;
   color: rgb(105, 104, 104);
   font-weight: 100;
+}
+
+.googly {
+  height: 3rem;
+}
+
+.left-box {
+  background-color: #0a6afa;
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid #0253cc;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.right-box {
+  background-color: #0a6afa;
+  height: 622px;
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid #0253cc;
+
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+
+  text-wrap: wrap;
+}
+
+.box-holder {
+  padding-top: 6rem;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.left-box:hover,
+.right-box:hover {
+  background-color: #0253cc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rock-img {
+  height: 150px;
+  position: absolute;
+}
+
+#rock1 {
+  top: 400px;
+  left: 50px;
+}
+
+#rock2 {
+  top: 600px;
+  right: 50px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#rock1:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#rock2:hover {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.thought-bubble {
+  height: 70px;
+  width: 130px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  position: absolute;
+
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  display: none;
+}
+
+#bubble1 {
+  top: 320px;
+  left: 70px;
+}
+
+#bubble2 {
+  top: 520px;
+  right: 70px;
 }
