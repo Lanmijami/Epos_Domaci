@@ -8,7 +8,7 @@
 body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.5rem;
-  height: 200vh;
+  height: 150vh;
 }
 
 .menu {
@@ -21,6 +21,7 @@ body {
   align-items: center;
   position: fixed;
   border-bottom: 1.5px solid rgb(227, 227, 227);
+  z-index: 10;
 }
 
 .menu-left,
@@ -97,7 +98,8 @@ body {
 }
 
 .box-holder {
-  padding-top: 3rem;
+  padding-top: 6rem;
+
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -109,4 +111,55 @@ body {
   background-color: #0253cc;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.rock-img {
+  height: 150px;
+  position: absolute;
+}
+
+#rock1 {
+  top: 400px;
+  left: 50px;
+}
+
+#rock2 {
+  top: 600px;
+  right: 50px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#rock1:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#rock2:hover {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.thought-bubble {
+  height: 70px;
+  width: 130px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  position: absolute;
+
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  display: none;
+}
+
+#bubble1 {
+  top: 320px;
+  left: 70px;
+}
+
+#bubble2 {
+  top: 520px;
+  right: 70px;
 }
