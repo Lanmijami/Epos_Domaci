@@ -44,8 +44,8 @@ body {
   height: 30%;
   display: flex;
 
-  padding: 0 640px;
-  padding-top: 10rem;
+  padding: 0 300px;
+  padding-top: 16rem;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -82,7 +82,7 @@ body {
 
 .right-box {
   background-color: #0a6afa;
-  height: 622px;
+  height: 623px;
   width: 300px;
   border-radius: 20px;
   border: 2px solid #0253cc;
@@ -162,4 +162,15 @@ body {
 #bubble2 {
   top: 520px;
   right: 70px;
+}
+
+.footer {
+  height: 6vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1.5px solid rgb(227, 227, 227);
 }
