@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Orbitron&family=Poppins:wght@400;700;800&family=Ubuntu:wght@400;500;700&display=swap');
 
-/* .header{
-    height: 30px;
-    width: auto;
-    background-color: white;
-    display: flex;
-} */
-
 * {
   padding: 0;
   margin: 0;
@@ -50,43 +43,22 @@ body {
   height: 3rem;
 }
 
-.prvi {
+.formContainer {
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
   padding-top: 6rem;
-  height: 1000px;
-  width: fit-content;
-  background-color: rgb(231, 228, 228);
-  display: flex;
-  justify-content: first baseline;
-  align-items: center;
-  flex-direction: column;
-}
-.naslov {
-  text-decoration-line: underline;
-  text-decoration-color: #3e78b2;
-}
-.tekst {
+  font-weight: bold;
   text-align: center;
-  margin-left: 400px;
-  margin-right: 400px;
-  line-height: 25px;
-  /* word-spacing: 5px; */
+  font-size: 4rem;
 }
 
-.naslov {
-  justify-content: center;
-}
-
-.mihajlo{
-  border: 2px solid #0253cc;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-
-}
-.velja{
+.form {
+  width: 80vw;
   border: 2px solid #0253cc;
   border-radius: 20px;
   display: flex;
@@ -95,34 +67,23 @@ body {
   justify-content: center;
   margin-bottom: 2rem;
 }
-.milanche{
+
+.form input,
+textarea {
+  border: 2px solid #0253cc;
+  border-radius: 10px;
+}
+
+#Holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border: 2px solid #0253cc;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
+  padding: 1rem;
 }
-.mihajloTroll{
-  height: 200px;
-  width: 300px;
-}
-.milancheTroll{
-  height: 200px;
-  width: 300px;
-}
-.veljaTroll{
-  height: 200px;
-  width: 300px;
-}
-.biografija{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 100%;
 
-}
 .footer {
   height: 6vh;
   width: 100%;

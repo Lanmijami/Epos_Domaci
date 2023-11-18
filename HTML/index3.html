@@ -3,9 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Epos_Domaci/CSS/style3.css" />
     <title>Document</title>
   </head>
   <body>
-    ZA FORMU
+    <div class="menu-container">
+      <div class="menu">
+        <div class="menu-left">
+          <a href="/Epos_Domaci/HTML/index4.html">Galerija</a>
+          <a href="#">Naš proces</a>
+          <a href="/Epos_Domaci/HTML/index1.html">O nama</a>
+        </div>
+
+        <img
+          class="googly"
+          src="/Epos_Domaci/IMG/googly.png"
+          alt="googly eyes"
+        />
+
+        <div class="menu-right">
+          <a href="/Epos_Domaci/index.html">Početna</a>
+
+          <a href="/Epos_Domaci/HTML/index3.html">Naruči</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="title">
+      KOJE UMETNIČKO DELO <br />
+      ŽELITE DA VIDITE U GALERIJI
+    </div>
+    <div class="formContainer">
+      <form class="form" action="/Epos_Domaci/HTML/index3.html">
+        <br />
+        <label for="formName">Unesite vaše ime i prezime:</label>
+        <input
+          type="text"
+          name="name"
+          id="formName"
+          placeholder="Shud Shulf"
+          style="font-size: 1.2rem; padding: 8px; margin-top: 4px"
+        />
+        <br />
+
+        <label for="formMail">Unesite vaš mejl:</label>
+        <input
+          type="text"
+          name="mail"
+          id="formMail"
+          placeholder="ShudShulf@hotmail.com"
+          style="font-size: 1.2rem; padding: 8px; margin-top: 4px"
+        />
+        <br />
+
+        <label>Unesite starosnu grupu kojoj pripadate:</label><br />
+        <div id="Holder">
+          <label for="formRadio1">&lt; 18</label>
+          <input type="radio" name="radio" id="formRadio1" checked /><br />
+          <label for="formRadio2">18 - 38</label>
+          <input type="radio" name="radio" id="formRadio2" /><br />
+          <label for="formRadio3">39 - 45</label>
+          <input type="radio" name="radio" id="formRadio3" /><br />
+          <label for="formRadio4">45 + </label>
+          <input type="radio" name="radio" id="formRadio4" /><br />
+        </div>
+        <br />
+
+        <label>Koje predmete želite da vidite u galeriji:</label><br />
+        <div id="Holder">
+          <label for="kamen">Kamen</label>
+          <input type="checkbox" name="kamen" id="kamen" /><br />
+
+          <label for="banana">Banana</label>
+          <input type="checkbox" name="banana" id="banana" /><br />
+
+          <label for="Protivpožarniaparat">Protivpožarni aparat</label>
+          <input
+            type="checkbox"
+            name="Protivpožarniaparat"
+            id="Protivpožarniaparat"
+          /><br />
+
+          <label for="Pisoar">Pisoar</label>
+          <input type="checkbox" name="Pisoar" id="Pisoar" /><br />
+
+          <label for="Saksija">Saksija</label>
+          <input type="checkbox" name="Saksija" id="Saksija" /><br />
+
+          <label for="Random">Random</label>
+          <input type="checkbox" name="Random" id="Random" checked />
+        </div>
+        <br />
+
+        <label for="textArea">Kako ste saznali za Guuugli galeriju:</label>
+        <textarea
+          placeholder="Upisite tekst ovde ... "
+          name="textArea"
+          id="textArea"
+          cols="30"
+          rows="10"
+          style="font-size: 1.5rem; padding: 1rem; margin-top: 4px"
+        ></textarea
+        ><br />
+        <button
+          type="submit"
+          style="
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid #0253cc;
+            background-color: white;
+            border-radius: 10px;
+            font-family: 'Ubuntu', sans-serif;
+          "
+        >
+          Pošalji formu
+        </button>
+
+        <button
+          type="reset"
+          style="
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 2px solid #0253cc;
+            background-color: white;
+            border-radius: 10px;
+            font-family: 'Ubuntu', sans-serif;
+          "
+        >
+          Resetuj formu
+        </button>
+        <br />
+      </form>
+    </div>
+
+    <div class="footer">
+      <text>Veljko</text>
+      <text>Mihajlo</text>
+      <text>Milan</text>
+    </div>
   </body>
 </html>
