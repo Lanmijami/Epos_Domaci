@@ -94,3 +94,17 @@ textarea {
   align-items: center;
   border-top: 1.5px solid rgb(227, 227, 227);
 }
+
+.button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #0253cc;
+  background-color: white;
+  border-radius: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.button:hover {
+  background-color: #0253cc32;
+  cursor: pointer;
+}
