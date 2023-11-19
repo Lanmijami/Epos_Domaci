@@ -34,24 +34,27 @@
       ŽELITE DA VIDITE U GALERIJI
     </div>
     <div class="formContainer">
-      <form class="form" action="/Epos_Domaci/HTML/index3.html">
+      <form name="myForm" class="form" action="/Epos_Domaci/HTML/index3.html">
         <br />
-        <label for="formName">Unesite vaše ime i prezime:</label>
+        <label for="name">Unesite vaše ime i prezime:</label>
         <input
+          required
           type="text"
           name="name"
-          id="formName"
+          id="name"
           placeholder="Shud Shulf"
           style="font-size: 1.2rem; padding: 8px; margin-top: 4px"
         />
         <br />
 
-        <label for="formMail">Unesite vaš mejl:</label>
+        <label for="mail">Unesite vaš mejl:</label>
         <input
+          required
+          pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
           type="text"
           name="mail"
-          id="formMail"
-          placeholder="ShudShulf@hotmail.com"
+          id="mail"
+          placeholder="ShudShulf@example.com"
           style="font-size: 1.2rem; padding: 8px; margin-top: 4px"
         />
         <br />
@@ -105,31 +108,15 @@
           style="font-size: 1.5rem; padding: 1rem; margin-top: 4px"
         ></textarea
         ><br />
-        <button
-          type="submit"
-          style="
-            padding: 10px;
-            font-size: 1rem;
-            border: 2px solid #0253cc;
-            background-color: white;
-            border-radius: 10px;
-            font-family: 'Ubuntu', sans-serif;
-          "
-        >
+        <button id="submit" class="button" onclick="validacija()">
           Pošalji formu
         </button>
 
         <button
+          class="button"
           type="reset"
-          style="
-            margin-top: 10px;
-            padding: 10px;
-            font-size: 1rem;
-            border: 2px solid #0253cc;
-            background-color: white;
-            border-radius: 10px;
-            font-family: 'Ubuntu', sans-serif;
-          "
+          onclick="reset()"
+          style="margin-top: 10px"
         >
           Resetuj formu
         </button>
@@ -142,5 +129,11 @@
       <text>Mihajlo</text>
       <text>Milan</text>
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Epos_Domaci/SCRIPT/jquery3.js"></script>
   </body>
 </html>
