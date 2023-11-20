@@ -1,11 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Orbitron&family=Poppins:wght@400;700;800&family=Ubuntu:wght@400;500;700&display=swap');
 
-/* .header{
-    height: 30px;
-    width: auto;
-    background-color: white;
-    display: flex;
-} */
+@media (max-width: 1150px) {
+  .menu-left a,
+  .menu-right a {
+    font-size: 1rem;
+  }
+
+  .inspiration,
+  .backstory {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .menu-left a,
+  .menu-right a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .hamburger {
+    display: block !important;
+  }
+
+  .menu {
+    display: none !important;
+  }
+
+  .inspiration,
+  .backstory {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .inspiration,
+  .backstory {
+    font-size: 0.7rem !important;
+  }
+}
 
 * {
   padding: 0;
@@ -30,6 +64,49 @@ body {
   z-index: 10;
 }
 
+.hamburger {
+  display: none;
+
+  position: absolute;
+
+  z-index: 11;
+  top: 10px;
+  border-radius: 20px;
+  border: 2px solid #0253cc;
+}
+
+.backstoryParagraph {
+  text-wrap: wrap;
+  padding: 10rem 3rem 3rem 3rem;
+  font-size: 1.7rem;
+}
+
+.inspirationParagraph {
+  text-wrap: wrap;
+  padding: 3rem 3rem 3rem 3rem;
+  font-size: 1.7rem;
+}
+
+.hamburger img {
+  height: 50px;
+}
+
+.linkContainer {
+  background-color: white;
+  padding-top: 10px;
+  display: none;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.linkContainer a {
+  text-decoration: none;
+  color: black;
+}
 .menu-left,
 .menu-right {
   width: 35%;
@@ -91,12 +168,22 @@ body {
   text-align: center;
   height: 100%;
   width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0px 20px 20px 0px;
 }
 
 .inspiration {
   text-align: center;
   height: 100%;
   width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0px 20px 20px 0px;
 }
 
 .footer {

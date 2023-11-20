@@ -1,5 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Orbitron&family=Poppins:wght@400;700;800&family=Ubuntu:wght@400;500;700&display=swap');
 
+@media (max-width: 950px) {
+  .menu-left a,
+  .menu-right a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 850px) {
+  #rockEyes,
+  #rockBlind {
+    height: 500px !important;
+  }
+
+  .hero {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .hamburger {
+    display: block !important;
+  }
+
+  .menu {
+    display: none !important;
+  }
+
+  #rockEyes,
+  #rockBlind {
+    height: 400px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #rockEyes,
+  #rockBlind {
+    height: 300px !important;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -22,6 +62,38 @@ body {
   position: fixed;
   border-bottom: 1.5px solid rgb(227, 227, 227);
   z-index: 10;
+}
+
+.hamburger {
+  display: none;
+
+  position: absolute;
+
+  z-index: 11;
+  top: 10px;
+  border-radius: 20px;
+  border: 2px solid #0253cc;
+}
+
+.hamburger img {
+  height: 50px;
+}
+
+.linkContainer {
+  background-color: white;
+  padding-top: 10px;
+  display: none;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.linkContainer a {
+  text-decoration: none;
+  color: black;
 }
 
 .menu-left,
