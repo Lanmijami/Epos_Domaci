@@ -7,4 +7,89 @@
 
 body {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  /* height: 160vh; */
+}
+
+.menu {
+  height: 6vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  border-bottom: 1.5px solid rgb(227, 227, 227);
+  z-index: 10;
+}
+
+.menu-left,
+.menu-right {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-left a,
+.menu-right a {
+  color: black;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.googly {
+  height: 3rem;
+}
+
+.hero {
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inspiration {
+  padding-top: 5rem;
+}
+
+.hero ol li {
+  padding-bottom: 0.5rem;
+}
+
+.title {
+  padding-top: 3rem;
+  font-size: 3rem;
+  text-decoration: underline;
+  text-decoration-color: #0253cc;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#rockEyes,
+#rockBlind {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  height: 700px;
+  border-radius: 20px;
+  border: 2px solid #0253cc;
+  cursor: pointer;
+}
+
+#rockEyes {
+  display: none;
+}
+
+.footer {
+  height: 6vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1.5px solid rgb(227, 227, 227);
 }

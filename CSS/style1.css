@@ -50,79 +50,55 @@ body {
   height: 3rem;
 }
 
-.prvi {
-  padding-top: 6rem;
-  height: 1000px;
-  width: fit-content;
-  background-color: rgb(231, 228, 228);
-  display: flex;
-  justify-content: first baseline;
-  align-items: center;
-  flex-direction: column;
-}
-.naslov {
-  text-decoration-line: underline;
-  text-decoration-color: #3e78b2;
-}
-.tekst {
+.title {
+  padding-top: 3rem;
+  font-size: 3rem;
+  text-decoration: underline;
+  text-decoration-color: #0253cc;
   text-align: center;
-  margin-left: 400px;
-  margin-right: 400px;
-  line-height: 25px;
-  /* word-spacing: 5px; */
+  margin-bottom: 3rem;
 }
 
-.naslov {
-  justify-content: center;
-}
-
-.mihajlo{
-  border: 2px solid #0253cc;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-
-}
-.velja{
-  border: 2px solid #0253cc;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-.milanche{
-  border: 2px solid #0253cc;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-.mihajloTroll{
-  height: 200px;
-  width: 300px;
-}
-.milancheTroll{
-  height: 200px;
-  width: 300px;
-}
-.veljaTroll{
-  height: 200px;
-  width: 300px;
-}
-.biografija{
+.footer {
+  height: 6vh;
+  width: 100%;
+  background-color: white;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  width: 100%;
-
+  align-items: center;
+  border-top: 1.5px solid rgb(227, 227, 227);
 }
+
+.heroContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.hero {
+  height: 80vh;
+  width: 75%;
+  border-radius: 20px;
+  border: 2px solid #0253cc;
+  display: flex;
+  font-weight: bold;
+}
+
+.backstory {
+  border-right: 2px solid #0253cc;
+  text-align: center;
+  height: 100%;
+  width: 60%;
+}
+
+.inspiration {
+  text-align: center;
+  height: 100%;
+  width: 40%;
+}
+
 .footer {
   height: 6vh;
   width: 100%;
