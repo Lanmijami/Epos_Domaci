@@ -1,131 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Orbitron&family=Poppins:wght@400;700;800&family=Ubuntu:wght@400;500;700&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.5rem;
-    
+  padding: 0;
+  margin: 0;
+}
 
-  }
-  .tekst{
-display: none;
-  }
-  
-  .naslovcina{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 300px;
-    background-color: #F1F4FD;
-    flex-direction: column;
-  }
-  .menu {
-    height: 6vh;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    position: fixed;
-    border-bottom: 1.5px solid rgb(227, 227, 227);
-    z-index: 10;
-  }
-  
-  .menu-left,
-  .menu-right {
-    width: 35%;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .menu-left a,
-  .menu-right a {
-    color: black;
-  }
-  
-  .menu a {
-    text-decoration: none;
-  }
-  
-  .googly {
-    height: 3rem;
-  }
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+}
+
+.tekst {
+  display: none;
+}
+
+.naslovcina {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+
+  flex-direction: column;
+}
+.menu {
+  height: 6vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  position: fixed;
+  border-bottom: 1.5px solid rgb(227, 227, 227);
+  z-index: 10;
+}
+
+.menu-left,
+.menu-right {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-left a,
+.menu-right a {
+  color: black;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.googly {
+  height: 3rem;
+}
+
+.naslov {
+  text-decoration-line: underline;
+  text-decoration-color: #3e78b2;
+}
+
+.gallery {
+  padding: 5rem 0rem 10rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gallery img {
+  height: 15rem;
+  border-radius: 20px;
+  border: 2px solid #0253cc;
+}
+
+#img5 {
+  display: none;
+}
+
+.arrowLeft,
+.arrowRight {
+  text-align: center;
+
+  font-size: 4rem;
+}
+
+.arrowLeft:hover,
+.arrowRight:hover {
+  cursor: pointer;
+
+  color: gray;
+}
+
 .footer {
-    height: 6vh;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    border-top: 1.5px solid rgb(227, 227, 227);
-  }
-  .naslov{
-    text-decoration-line: underline;
-    text-decoration-color: #3e78b2;
-  }
-
-.slider-wrapper .lista-slika{
-    display: grid;
-    gap: 18px;
-    font-size: 0;
-    overflow-x: auto;
-    scrollbar-width: none;
-    margin-bottom: 30px;
-    grid-template-columns: repeat(10,1fr);
-}
-.slider-wrapper .lista-slika::-webkit-scrollbar{
-    display: none;
-}
-.slider-wrapper .lista-slika .image-item{
-    width: 325px;
-    height: 400px;
-    object-fit: cover;
-}
-.container{
-    max-width: 1200px;
-    width: 95%;
-}
-.slajder{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #F1F4FD;
-}
-
-
-
-.slider-wrapper1 .lista-slika1{
-    display: grid;
-    gap: 18px;
-    font-size: 0;
-    overflow-x: auto;
-    scrollbar-width: none;
-    margin-bottom: 30px;
-    grid-template-columns: repeat(10,1fr);
-}
-.slider-wrapper1 .lista-slika1::-webkit-scrollbar{
-    display: none;
-}
-.slider-wrapper1 .lista-slika1 .image-item{
-    width: 325px;
-    height: 400px;
-    object-fit: cover;
-}
-.container1{
-    max-width: 1200px;
-    width: 95%;
-}
-.slajder1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #F1F4FD;
+  height: 6vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1.5px solid rgb(227, 227, 227);
 }
