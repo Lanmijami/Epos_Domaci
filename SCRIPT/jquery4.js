@@ -36,3 +36,17 @@ $('.arrowLeft').on('click', function () {
     $('#img4').attr('src', '/Epos_Domaci/IMG/Items.avif');
   }
 });
+
+$('.linkContainer').hide();
+
+let num = 0;
+
+$('#hamburgerImg').on('click', function () {
+  if (num % 2 == 0) {
+    $('.linkContainer').show();
+  } else {
+    $('.linkContainer').hide();
+  }
+
+  num++;
+});
