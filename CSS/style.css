@@ -86,7 +86,7 @@ body {
   width: 300px;
   border-radius: 20px;
   border: 2px solid #0253cc;
-
+  text-wrap: wrap;
   color: white;
   text-align: center;
   display: flex;
